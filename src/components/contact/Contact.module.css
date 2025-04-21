@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  border: 1px solid #413d3d;
+  border-radius: 8px;
+}
+.description {
+  text-align: left;
+}
+.text:not(:last-child) {
+  margin-bottom: 5px;
+}
+.button {
+  color: rgb(255, 255, 255);
+  background-color: #ff0000;
+  border-radius: 8px;
+}

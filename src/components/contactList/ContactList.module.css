@@ -1,0 +1,11 @@
+.list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.item {
+  width: calc((100% - 25px * 2) / 3);
+  min-width: 300px;
+}
