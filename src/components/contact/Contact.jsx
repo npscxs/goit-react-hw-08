@@ -14,7 +14,7 @@ export default function Contact({ contact }) {
       <img
         src={
           contact.avatar ??
-          `https://ui-avatars.com/api/?name=${contact.name}&background=random`
+          `https://ui-avatars.com/api/?name=${contact.name}&background=f0f0f0&color=000&size=64&rounded=true&bold=true`
         }
         alt={`Avatar by ${contact.name}`}
         className={styles.image}

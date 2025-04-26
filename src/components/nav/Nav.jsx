@@ -8,7 +8,6 @@ export default function Header() {
   const dispatch = useDispatch();
   const userIsLogIn = useSelector(selectIsLoggedIn);
   const { name } = useSelector(selectUser);
-
   const handleLogOut = () => dispatch(fetchLogOutUser());
 
   return (

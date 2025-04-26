@@ -3,7 +3,7 @@ import { DotLoader } from "react-spinners";
 export default function Loader() {
   return (
     <DotLoader
-      color="green"
+      color="gray"
       cssOverride={{
         margin: "30px auto",
         color: "#007bff",
