@@ -8,4 +8,5 @@
 .item {
   width: calc((100% - 25px * 2) / 3);
   min-width: 300px;
+  color: rgb(253, 253, 253);
 }

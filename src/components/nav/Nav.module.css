@@ -1,0 +1,53 @@
+.nav {
+  padding: 20px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login {
+  background: #21c434;
+  background: linear-gradient(
+    90deg,
+    rgba(33, 196, 52, 1) 0%,
+    rgba(50, 171, 167, 1) 79%
+  );
+  border-radius: 20px;
+  min-width: 150px;
+  max-width: 300px;
+  align-self: center;
+  padding: 15px;
+}
+.logout {
+  background: #ed0735;
+  background: linear-gradient(
+    90deg,
+    rgba(237, 7, 53, 1) 12%,
+    rgba(149, 50, 171, 1) 79%
+  );
+  border-radius: 20px;
+  min-width: 150px;
+  max-width: 300px;
+  align-self: center;
+  padding: 15px;
+}
+
+.navLog {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}

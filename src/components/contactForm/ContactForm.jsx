@@ -1,8 +1,7 @@
 import { useDispatch } from "react-redux";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-
 import { object, string } from "yup";
-import { addContact } from "../../redux/contactsOps";
+import { addContact } from "../../redux/contacts/operations";
 import styles from "./ContactForm.module.css";
 
 const NewUserShema = object().shape({
@@ -11,6 +10,7 @@ const NewUserShema = object().shape({
     .max(50, "The name must contain at least 50 characters")
     .required("Required field"),
   number: string()
+    .matches(/^\d+$/, "Only numbers are allowed")
     .min(3, "The number must contain at least 3 characters")
     .max(14, "The number must contain at least 14 characters")
     .required("Required field"),
@@ -23,7 +23,9 @@ export default function ContactForm() {
     if (data.name.trim() === "" || data.number.trim() === "") {
       return;
     }
+
     dispatch(addContact(data));
+
     action.resetForm();
   };
 

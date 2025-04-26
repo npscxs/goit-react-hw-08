@@ -15,6 +15,11 @@
 }
 .button {
   color: rgb(255, 255, 255);
-  background-color: #ff0000;
+  background: #ed0735;
+  background: linear-gradient(
+    90deg,
+    rgba(237, 7, 53, 1) 12%,
+    rgba(149, 50, 171, 1) 79%
+  );
   border-radius: 8px;
 }

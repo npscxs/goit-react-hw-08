@@ -1,5 +1,5 @@
 {
-  "name": "goit-react-hw-06",
+  "name": "goit-react-hw-08",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,11 +14,11 @@
     "axios": "^1.8.4",
     "formik": "^2.4.6",
     "modern-normalize": "^3.0.1",
-    "nanoid": "^5.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-redux": "^9.2.0",
+    "react-router-dom": "^7.5.0",
     "react-spinners": "^0.15.0",
     "redux-persist": "^6.0.0",
     "yup": "^1.6.1"
