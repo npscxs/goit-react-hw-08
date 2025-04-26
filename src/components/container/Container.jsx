@@ -21,7 +21,7 @@ export default function Container({ children }) {
         <Loader />
       ) : authError ?? contactsError ? (
         <p style={{ textAlign: "center" }}>
-          Something went wrong. Please try again.
+          Something went wrong. Please reload page.
         </p>
       ) : (
         children
