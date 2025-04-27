@@ -1,8 +1,9 @@
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, useEffect } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCurrentUser } from "../../redux/auth/operations";
 import { selectIsRefreshing } from "../../redux/auth/selectors";
+import Layout from "../layout/Layout";
 
 const Container = lazy(() => import("../container/Container"));
 const HomePage = lazy(() => import("../../pages/HomePage"));
@@ -11,8 +12,9 @@ const LoginPage = lazy(() => import("../../pages/LoginPage"));
 const ContactsPage = lazy(() => import("../../pages/ContactsPage"));
 
 import Loader from "../loader/Loader";
-import RestrictedRout from "../restrictedRout/RestrictedRout";
-import PrivateRout from "../privateRout/PrivateRout";
+import RestrictedRout from "../restrictedRoute/RestrictedRoute";
+import PrivateRout from "../privateRoute/PrivateRoute";
+import Section from "../section/Section";
 import "./App.css";
 
 function App() {
@@ -27,8 +29,8 @@ function App() {
   return isRefreshing ? (
     <Loader />
   ) : (
-    <Container>
-      <Suspense fallback={<Loader />}>
+    <Section>
+      <Container>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route
@@ -57,8 +59,8 @@ function App() {
           />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-      </Suspense>
-    </Container>
+      </Container>
+    </Section>
   );
 }
 

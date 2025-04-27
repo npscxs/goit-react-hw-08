@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { object, string } from "yup";
 
-import styles from "./Login.module.css";
+import styles from "./LoginForm.module.css";
 import { useDispatch } from "react-redux";
 import { fetchLogInUser } from "../../redux/auth/operations";
 
